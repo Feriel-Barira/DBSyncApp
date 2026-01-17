@@ -1,7 +1,7 @@
 # DB Sync App
 
 Application de synchronisation entre deux bases de données : SQL Server (SDT) et MySQL (DIVA).
-## Fonctionnement de la synchronisation et gestion des interventions
+### Fonctionnement de la synchronisation et gestion des interventions
 
 L’application assure la synchronisation des pannes depuis la base de données source
 SQL Server (SDT) vers la base cible MySQL (DIVA).
@@ -88,9 +88,12 @@ Les bases de données et les tables doivent être créées manuellement après l
 Un script SQL est fourni uniquement pour la base source SQL Server (SDT).
 La base MySQL (DIVA) doit être créée manuellement en reproduisant la structure nécessaire.
 
+---
 ## 2️⃣ Configurer les variables d’environnement
 Le fichier .env.example est fourni comme modèle.
 Il doit être renommé en .env puis modifié avec les vraies données (utilisateurs, mots de passe, hôtes, etc.) avant de lancer l’application.
+
+---
 ## 3️⃣ Installer les dépendances
 Back-end (Node.js)
 ```bash
@@ -102,6 +105,8 @@ Front-end (React)
 cd front
 npm install
 ```
+---
+
 ## 4️⃣ Lancer l’application
 Back-end
 ```bash

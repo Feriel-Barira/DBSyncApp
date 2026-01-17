@@ -84,4 +84,8 @@ Front-end
 cd frontend
 npm start
 ```
+<img width="1895" height="852" alt="image" src="https://github.com/user-attachments/assets/b9fcf548-d22b-419f-8eab-6f4fd4f7dac7" />
+<img width="1906" height="350" alt="image" src="https://github.com/user-attachments/assets/277837d5-9962-43af-9f82-18ba778ba988" />
+
+
 

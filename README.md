@@ -37,15 +37,6 @@ docker start sqlserver
 ```bash
 docker start mysqlB
 ```
-#### 🆕 Ouvrir les conteneurs avec cmd
-SQL Server
-```bash
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=motdepasse" -p 1433:1433 --name sqlserver -d mcr.microsoft.com/mssql/server:2022-latest
-```
-MySQL
-```bash
-docker run -e MYSQL_ROOT_PASSWORD=motdepasse -p 3306:3306 --name mysqlB -d mysql:latest
-```
 ### 🛠️ Initialisation manuelle des bases de données
 #### SQL Server (SDT)
 Connexion à SQL Server :

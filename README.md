@@ -1,33 +1,14 @@
-# DB Sync App
+# GPro-DivaTex Maintenance Interface
 
 Application de synchronisation entre deux bases de données : SQL Server (SDT) et MySQL (DIVA).
-### Fonctionnement de la synchronisation et gestion des interventions
 
-L’application assure la synchronisation des pannes depuis la base de données source
-SQL Server (SDT) vers la base cible MySQL (DIVA).
+## Contexte des systèmes (GPro & DivaTex)
 
-Chaque panne est détectée à partir de la table `LostTimeTransaction` de la base SDT.
-Lorsqu’une nouvelle panne est synchronisée :
+-SDT (SQL Server) est la base de données du système GPro, utilisée pour la gestion de la production et la détection des pannes machines.
 
-- Une **demande d’intervention** est automatiquement créée dans la base DIVA.
-- Chaque **intervention** est obligatoirement associée à une seule demande d’intervention.
+-DIVA (MySQL) est la base de données du système DivaTex, dédiée à la gestion de la maintenance (demandes d’intervention, interventions et mécaniciens).
 
-La gestion des interventions se fait entièrement dans la base DIVA et via l’interface front-end.
-
-### Gestion des mécaniciens et des interventions
-
-- La base DIVA contient une **liste de mécaniciens disponibles**.
-- Lorsqu’une intervention est créée, son état initial est **"En attente"**.
-- Lors de l’affectation d’un mécanicien :
-  - Un seul mécanicien peut être affecté à une intervention.
-  - L’état de l’intervention passe à **"En cours"**.
-  - Le mécanicien devient indisponible pendant l’intervention.
-- Une fois l’intervention terminée :
-  - L’état passe à **"Terminée"**.
-  - Le mécanicien est libéré et redevient disponible.
-
-Toutes les interventions créées et mises à jour sont visibles dans l’interface front-end,
-qui est connectée exclusivement à la base de données DIVA.
+L’application joue le rôle d’interface entre GPro et DivaTex, en assurant la synchronisation des pannes détectées dans GPro vers le système de maintenance DivaTex.
 
 ---
 

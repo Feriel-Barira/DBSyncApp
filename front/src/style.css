@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+/* ETAT */
+.badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+}
+
+.badge.open {
+  background: #e67e22;
+}
+
+.badge.closed {
+  background: #27ae60;
+}
+
+/* BUTTON */
+button {
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button.close {
+  background: #c0392b;
+  color: white;
+}
+
+button.close:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* PAGINATION */
+.pagination {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+  background: #3498db;
+  color: white;
+}
+.badge.open {
+  background: orange;
+  color: white;
+}
+.badge.waiting {
+  background: gray;
+  color: white;
+}
+.badge.closed {
+  background: green;
+  color: white;
+}

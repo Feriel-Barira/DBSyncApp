@@ -26,7 +26,6 @@ L’application (back-end et front-end) **n’est pas dockerisée**.
 ### Conteneurs utilisés
 - SQL Server (sqlserver) : port 1433
 - MySQL (mysqlB) : port 3306
----
 Exemples de commandes pour les lancer si les conteneurs existent déjà :
 ### ▶️ Démarrer les conteneurs existants
 ##### Lancer SQL Server

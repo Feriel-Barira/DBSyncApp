@@ -28,20 +28,16 @@ L’application (back-end et front-end) **n’est pas dockerisée**.
 - MySQL (mysqlB) : port 3306
 ---
 Exemples de commandes pour les lancer si les conteneurs existent déjà :
-##### Lancer SQL Server
-```bash
-docker start sqlserver
-```
 ### ▶️ Démarrer les conteneurs existants
 ##### Lancer SQL Server
 ```bash
 docker start sqlserver
 ```
-Lancer MySQL
+##### Lancer MySQL
 ```bash
 docker start mysqlB
 ```
-#### 🆕 Créer les conteneurs (si non existants)
+#### 🆕 Ouvrir les conteneurs avec cmd
 SQL Server
 ```bash
 docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=motdepasse" -p 1433:1433 --name sqlserver -d mcr.microsoft.com/mssql/server:2022-latest

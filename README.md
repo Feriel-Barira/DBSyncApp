@@ -39,10 +39,10 @@ docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=motdepasse" -p 1433:1433 --name sq
 ```bash
 docker run -e MYSQL_ROOT_PASSWORD=motdepasse -p 3306:3306 --name mysqlB -d mysql:latest
 ```
-2️⃣ Configurer les variables d’environnement
+## 2️⃣ Configurer les variables d’environnement
 Le fichier .env.example est fourni comme modèle.
 Il doit être renommé en .env puis modifié avec les vraies données (utilisateurs, mots de passe, hôtes, etc.) avant de lancer l’application.
-3️⃣ Installer les dépendances
+## 3️⃣ Installer les dépendances
 Back-end (Node.js)
 ```bash
 cd back
@@ -53,7 +53,7 @@ Front-end (React)
 cd front
 npm install
 ```
-4️⃣ Lancer l’application
+## 4️⃣ Lancer l’application
 Back-end
 ```bash
 cd backend
